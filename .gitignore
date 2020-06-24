@@ -13,3 +13,15 @@ libtool
 /test/test00.sh
 /test/test00b.sh
 /web/webpuff
+
+# Binaries
+.libs
+*.o
+*.lo
+*.la
+*.a
+ashxp
+
+# logs
+wget.log
+*.err
