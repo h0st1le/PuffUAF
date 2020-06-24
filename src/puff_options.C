@@ -801,30 +801,30 @@ void option_switch(int opt, const char *optarg, const struct option *opt_lng) {
 void set_defaults(struct Argument *argument) {
   /* define default for everything for easy reference */
   
-	argument->argFile = (char)NULL;
+	argument->argFile = (char*)NULL;
   argument->ashLogMean = -6;
   argument->ashLogSdev = 1;
 	argument->ashOutput = true;
   argument->averageOutput = false;
 	argument->computeConcentration = false;
-  argument->dem = (char)NULL;
+  argument->dem = (char*)NULL;
   argument->dem_lvl = 0;
   argument->diffuseH = 10000;
   argument->diffuseZ = 10;
 	argument->drag = 1.0;
   argument->dtMins = 10;
-  argument->eruptDate = (char)NULL;
+  argument->eruptDate = (char*)NULL;
   argument->eruptMass = 1e9;  // kilograms
   argument->eruptHours = 3;
-	argument->fileT = (char)NULL;
-  argument->fileU = (char)NULL;
-  argument->fileV = (char)NULL;
-  argument->fileZ = (char)NULL;
+	argument->fileT = (char*)NULL;
+  argument->fileU = (char*)NULL;
+  argument->fileV = (char*)NULL;
+  argument->fileZ = (char*)NULL;
   argument->gridOutput = false;
-  argument->gridBox = (char)NULL;
+  argument->gridBox = (char*)NULL;
   argument->gridLevels = -1;
   argument->gridSize = (char*)"0.5x2000";
-	argument->logFile = (char)NULL;
+	argument->logFile = (char*)NULL;
   argument->model = (char*)"puff";
   argument->nAsh = 2000;
   argument->newline = false;
@@ -834,7 +834,7 @@ void set_defaults(struct Argument *argument) {
   argument->opath = "./";
   argument->particleOutput = true;
   argument->path = (char*)"";
-  argument->phiDist = (char)NULL;
+  argument->phiDist = (char*)NULL;
   argument->planesFile.clear();
   argument->plumeMax = 16000;
   argument->plumeMin = 0;
@@ -842,10 +842,10 @@ void set_defaults(struct Argument *argument) {
   argument->plumeZwidth = 3;
   argument->plumeShape = (char*)"linear";
   argument->quiet = false;
-  argument->rcfile = (char)NULL;
+  argument->rcfile = (char*)NULL;
 	argument->regionalWinds = (double)NULL;
   argument->repeat = -1;
-  argument->restartFile = (char)NULL;
+  argument->restartFile = (char*)NULL;
   argument->runHours = 24;
   argument->runSurface = false;
   argument->saveHours = 6;
@@ -856,14 +856,14 @@ void set_defaults(struct Argument *argument) {
   argument->showVolcs = false;
   argument->silent = false;
   argument->sorted = (char*)"yes";
-  argument->varU = (char)NULL;
-  argument->varV = (char)NULL;
+  argument->varU = (char*)NULL;
+  argument->varV = (char*)NULL;
   argument->verbose = false;
 	argument->volc = (char*)calloc(128,sizeof(char));
   strcpy(argument->volc,"none");
   argument->volcLat = (double)NULL;
   argument->volcLon = (double)NULL;
-  argument->volcFile = (char)NULL;
+  argument->volcFile = (char*)NULL;
   return;
   }
 

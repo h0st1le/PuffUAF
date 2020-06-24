@@ -95,7 +95,7 @@ void Planes::readPlanesFile(std::ifstream *planesFile)
   char *line;
   
   line = (char*)calloc(LINE_LENGTH, sizeof(char)); 
-  while (planesFile->getline(line, LINE_LENGTH, '\n') != NULL)
+  while (planesFile->getline(line, LINE_LENGTH, '\n').fail() == false) // Error Check
   {
     // skip bad data, or useless header stuff
     flData data = parseLine(line);

@@ -130,7 +130,7 @@ bool PuffRC::init(char* rcfileArg) {
    }
 
   // leave if there is still no file found
-  if (ret == -1) fileName = (char)NULL;
+  if (ret == -1) fileName = (char*)NULL;
   
   return false;
 }  
@@ -154,7 +154,7 @@ int PuffRC::loadResources(char *modelArg, const char *type) {
   std::string text;  // string copy of the buffer; easier to parse
   std::string param, value, tmpMask;
   
-  while (rcFile.getline(line, 1024, '\n') != NULL) {
+  while (rcFile.getline(line, 1024, '\n').fail() == false) { // Error Check
     //  read the next line if it is a continuation of the previous
     while (line[strlen(line)-1] == '\\') {
       // create another buffer

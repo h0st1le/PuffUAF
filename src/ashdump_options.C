@@ -259,16 +259,16 @@ void set_defaults(struct Argument *argument)
 
   argument->age = false;
 	argument->airborne = true;
-	argument->infile = (char)NULL;
+	argument->infile = (char*)NULL;
 	argument->fallout = true;
   argument->feet = false;
   argument->hdr = false;
-  argument->height = (char)NULL;
+  argument->height = (char*)NULL;
   argument->lat = false;
   argument->lon = false;
   argument->precision = 2;
-  argument->range = (char)NULL;
-  argument->size = (char)NULL;
+  argument->range = (char*)NULL;
+  argument->size = (char*)NULL;
   argument->stats = false;
   argument->showParams = false;
   argument->showSize = false;

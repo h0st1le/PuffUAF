@@ -135,7 +135,7 @@ void Cloud::readPoints()
   bool readingElevations = false;
   bool readingSize = false;
   
-  while (cloudFile.getline(line, 1024, '\n') != NULL) 
+  while (cloudFile.getline(line, 1024, '\n').fail() == false) // Check for Error 
   {
     lineNumber++;
     // copy char* into string for parsing

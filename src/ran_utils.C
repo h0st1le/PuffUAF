@@ -257,8 +257,9 @@ float poi_dist(float xm, int &idum) {
 float factorial(float f) {
   float value = 0;
   value = f*exp(gammln(f));
-  // HUGE should be defined in cmath header
-  if (value > HUGE) {
+  // HUGE_VALF should be defined in cmath header
+  // http://www.cplusplus.com/reference/cmath/
+  if (value > HUGE_VALF) {
     std::cerr << "overflow error while calculating factorial\n";
     exit(1);
     }
