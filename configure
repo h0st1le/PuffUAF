@@ -16952,9 +16952,9 @@ else
   as_fn_error $? "libfreetype not found" "$LINENO" 5
 fi
 
-  ft_cflags=`freetype-config --cflags`
+  ft_cflags=$(pkg-config --cflags freetype2)
   CFLAGS="$CFLAGS $ft_cflags"
-  ft_libs=`freetype-config --libs`
+  ft_libs=$(pkg-config --libs freetype2)
   LIBS="$LIBS $ft_libs"
   ac_ext=cpp
 ac_cpp='$CXXCPP $CPPFLAGS'
