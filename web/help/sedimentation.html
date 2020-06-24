@@ -1,0 +1,13 @@
+<html><head><title>WebPuff Help - sedimentation</title></head>
+<body>
+<h1>Fall Dynamics Models</h1>
+There are three different models that describe how ash particles fall due to gravity
+<ul>
+ <li><b><font color="red">constant</font></b> - Assumes laminar flow and a constant air viscosity. </li>
+<li><b><font color="red">stokes</font></b> - Assumes laminar flow, but computes a local viscosity as a function of air temperature</li>
+<li><b><font color="red">reynolds</font></b> - Computes the local Reynolds number in order to determine whether the flow is laminar, turbulent, or transitional. Local viscosity is computed as a function of temperature.</li>
+</ul>
+<p>
+Run time for <b>stokes</b> or <b>reynolds</b> is longer because the local conditions must be computed for each particle at every time step.
+
+</body></html>
