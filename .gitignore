@@ -20,7 +20,9 @@ libtool
 *.lo
 *.la
 *.a
-ashxp
+lib
+bin
+share
 
 # logs
 wget.log
