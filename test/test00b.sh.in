@@ -18,7 +18,7 @@ else
       :
     else
     echo "retrieving image file $file"
-    @WGET@ http://puff.images.alaska.edu/download/images/$file -a $wget_log
+    @WGET@ http://sourceforge.net/projects/puff-uaf/files/etc/images/$file -a $wget_log
     fi
   done
 fi
