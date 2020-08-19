@@ -9,4 +9,4 @@ model=gfs4 mask=gfs_4_YYYYMMDD.nc var=u,v path=$PUFFHOME/data
 model=wrf mask=wrf_out0.nc var=u,v path=$PUFFHOME/data
 dem=gtopo30 path=$PUFFHOME/data/gtopo30
 dem=dted0 path=$PUFFHOME/data/dted0/dted
-dem=ned path=#PUFFHOME/data/ned
+dem=ned path=$PUFFHOME/data/ned

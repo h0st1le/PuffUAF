@@ -23,6 +23,7 @@ libtool
 lib
 bin
 share
+output
 /src/ashdump
 /src/ashxp/ashxp
 /src/pp2nc
