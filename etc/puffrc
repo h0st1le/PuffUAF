@@ -1,12 +1,12 @@
 model=gfs mask=YYYYMMDDHH_gfs.nc var=u,v,T path=$PUFFHOME/data
 model=nam216 mask=YYYYMMDDHH_nam216.nc var=u,v,z,T path=$PUFFHOME/data
-model=gfs2 mask=GFS_Global_0p5deg_YYYYMMDD_HH00.nc var=u,v path=/home/rorik/Projects/puff/puff-uaf/trunk/work
+model=gfs2 mask=GFS_Global_0p5deg_YYYYMMDD_HH00.nc var=u,v path=$PUFFHOME/data
 model=reanalysis mask=uwnd.YYYY.nc var=u path=$PUFFHOME/data/reanalysis varUname=uwnd
 model=reanalysis mask=vwnd.YYYY.nc var=v path=$PUFFHOME/data/reanalysis varVname=vwnd
 model=ecmwf mask=YYYYMMDDHH_ecmwf.nc var=u,v path=$PUFFHOME/data/ecmwf varUname=U varVname=V
-model=gfs3 mask=gfs_3_YYYYMMDD.nc var=u,v varUname=U_GRD_3_ISBL_10 varVname=V_GRD_3_ISBL_10 path=/home/rorik/Projects/puff/data/gfs
-model=gfs4 mask=gfs_4_YYYYMMDD.nc var=u,v path=$PUFFHOME/data/gfs
+model=gfs3 mask=gfs_3_YYYYMMDD.nc var=u,v varUname=U_GRD_3_ISBL_10 varVname=V_GRD_3_ISBL_10 path=$PUFFHOME/data
+model=gfs4 mask=gfs_4_YYYYMMDD.nc var=u,v path=$PUFFHOME/data
 model=wrf mask=wrf_out0.nc var=u,v path=$PUFFHOME/data
 dem=gtopo30 path=$PUFFHOME/data/gtopo30
 dem=dted0 path=$PUFFHOME/data/dted0/dted
-dem=ned path=/home/rorik/Projects/puff/ned
+dem=ned path=#PUFFHOME/data/ned
