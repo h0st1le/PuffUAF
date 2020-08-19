@@ -6,7 +6,7 @@ Puff was initially conceived and developed by  Prof. H. Tanaka as a novel method
 This version of Puff, also known as PuffUAF, is supported by the University of Alaska Fairbanks, Geophysical Institute Remote Sensing group. It is licenced under the General Public License and is freely available from the website 
 http://puff.images.alaska.edu (Site not available, checked on Jun. 23. 2020)
 
-Original Author is this code is Rorik Peterson(rapeterson@alaska.edu), and I imported this to github to further fix the code. The fixed code should work on Ubuntu 20.04 LTS (WSL2)
+Original Author is this code is Rorik Peterson(rapeterson@alaska.edu), and I imported this to github to further fix the code. The fixed code should work on Ubuntu 20.04 LTS (WSL2). Changed code also works on Ubuntu 18.04 LTS.
 
 TODOs
 1. Remove depreciated codes
