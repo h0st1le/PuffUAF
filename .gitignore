@@ -23,6 +23,11 @@ libtool
 lib
 bin
 share
+/src/ashdump
+/src/ashxp/ashxp
+/src/pp2nc
+/src/puff
+/web/mini_httpd/mini_httpd
 
 # logs
 wget.log
